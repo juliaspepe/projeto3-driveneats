@@ -34,25 +34,25 @@ body {
 h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
+    font-weight: 400;
     color:#FFFFFF;
 }
 
 h2 {
-    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     color:#FFFFFF;
 }
 
-.prato {
+.texto-principal {
     color: #333333;
     margin-left: 19px;
     margin-top: 31px;
     margin-bottom: 17px;
-}
-
-.prato p {
     font-family: 'Righteous', cursive;
     font-size: 26px;
+    font-weight: 400;
 }
 
 .caixa-prato,
