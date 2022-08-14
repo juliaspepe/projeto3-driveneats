@@ -20,50 +20,64 @@
     <div class="prato">
         <p>Primeiro, seu prato</p>
     </div>
-    <div class="caixa">
-        <div onclick="SelecionarPrato()" class="pedido-prato">
-            <img src="imagens/frango_yin_yang 1.png"/>
-            <div class="pedido-texto">
+    <div class="caixa-prato">
+        <div onclick="SelecionarPrato(this)" class="pedido-prato">
+            <img class="produto" src="imagens/frango_yin_yang 1.png"/>
+            <div class="pedido-texto-prato">
                 <h3>Frango Yin Yang</h3>
                 <h4>Um pouco de batata, um pouco de salada</h4>
-                <p>R$ 14,90</p>
-                <img class="botão" src="imagens/checkmark-circle 1.png"/>
+                <p>R$ <span class="valor">14,90</span></p>
+                <div class="botão">
+                <img src="imagens/checkmark-circle 1.png"/>
+            </div>
             </div>
         </div>
         <!----pedido 2----->
-        <div onclick="SelecionarPrato()" class="pedido-prato">
-            <img src="imagens/lasanha.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarPrato(this)" class="pedido-prato">
+            <img class="produto" src="imagens/lasanha.png"/>
+            <div class="pedido-texto-prato">
                 <h3>Lasanha de carne</h3>
                 <h4>Um pouco de massa, um pouco de carne</h4>
-                <p>R$ 17,90</p>
+                <p>R$ <span class="valor">17,90</span></p>
+                <div class="botão">
+                <img src="imagens/checkmark-circle 1.png"/>
+            </div>
             </div>
         </div>
         <!----pedido 3----->
-        <div onclick="SelecionarPrato()" class="pedido-prato">
-            <img src="imagens/nhoque.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarPrato(this)" class="pedido-prato">
+            <img class="produto" src="imagens/nhoque.png"/>
+            <div class="pedido-texto-prato">
                 <h3>Nhoque de batata</h3>
                 <h4>Um pouco de batata, um pouco de tomate</h4>
-                <p>R$ 16,90</p>
+                <p>R$ <span class="valor">16,90</span></p>
+                <div class="botão">
+                <img src="imagens/checkmark-circle 1.png"/>
+            </div>
             </div>
         </div>
         <!----pedido 4----->
-        <div onclick="SelecionarPrato()" class="pedido-prato">
-            <img src="imagens/estrogonofe"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarPrato(this)" class="pedido-prato">
+            <img class="produto" src="imagens/estrogonofe"/>
+            <div class="pedido-texto-prato">
                 <h3>Estrogonofe</h3>
                 <h4>Um pouco de frango, um pouco de arroz</h4>
-                <p>R$ 15,90</p>
+                <p>R$ <span class="valor">15,90</span></p>
+                <div class="botão">
+                <img src="imagens/checkmark-circle 1.png"/>
+            </div>
             </div>
         </div>
         <!----pedido 5----->
-        <div onclick="SelecionarPrato()" class="pedido-prato">
-            <img src="imagens/pf.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarPrato(this)" class="pedido-prato">
+            <img class="produto" src="imagens/pf.png"/>
+            <div class="pedido-texto-prato">
                 <h3>PF vegetariano</h3>
                 <h4>Um pouco de arroz, feijão e salada</h4>
-                <p>R$ 13,90</p>
+                <p>R$ <span class="valor">13,90</span></p>
+                <div class="botão">
+                <img src="imagens/checkmark-circle 1.png"/>
+            </div>
             </div>
         </div>
     </div>
@@ -71,49 +85,64 @@
     <div class="prato">
         <p>Agora, sua bebida</p>
     </div>
-    <div class="caixa">
-        <div class="pedido-bebida">
-            <img src="imagens/coquinha_gelada 1.png"/>
-            <div class="pedido-texto">
+    <div class="caixa-bebida">
+        <div onclick="SelecionarBebida(this)" class="pedido-bebida">
+            <img class="produto" src="imagens/coquinha_gelada 1.png"/>
+            <div class="pedido-texto-bebida">
                 <h3>Coca-cola</h3>
                 <h4>Lata 350ml</h4>
-                <p>R$ 4,90</p>
+                <p>R$ <span class="valor">4,90</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 2----->
-        <div class="pedido-bebida">
-            <img src="imagens/aguamineral"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarBebida(this)" class="pedido-bebida">
+            <img class="produto" src="imagens/aguamineral"/>
+            <div class="pedido-texto-bebida">
                 <h3>Água</h3>
                 <h4>Garrafa 350ml</h4>
-                <p>R$ 3,50</p>
+                <p>R$ <span class="valor">3,50</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 3----->
-        <div class="pedido-bebida">
-            <img src="imagens/aguacomgas"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarBebida(this)" class="pedido-bebida">
+            <img class="produto" src="imagens/aguacomgas"/>
+            <div class="pedido-texto-bebida">
                 <h3>Água com Gás</h3>
                 <h4>Garrafa 350ml</h4>
-                <p>R$ 4,50</p>
+                <p>R$ <span class="valor">4,50</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 4----->
-        <div class="pedido-bebida">
-            <img src="imagens/suco.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarBebida(this)" class="pedido-bebida">
+            <img class="produto" src="imagens/suco.png"/>
+            <div class="pedido-texto-bebida">
                 <h3>Suco de Laranja</h3>
                 <h4>Copo 350ml</h4>
-                <p>R$ 6,90</p>
+                <p>R$ <span class="valor">6,90</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 5----->
-        <div class="pedido-bebida">
-            <img src="imagens/guarana"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarBebida(this)" class="pedido-bebida">
+            <img class="produto" src="imagens/guarana"/>
+            <div class="pedido-texto-bebida">
                 <h3>Guaraná</h3>
                 <h4>Lata 350ml</h4>
-                <p>R$ 4,90</p>
+                <p>R$ <span class="valor">4,70</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
     </div>
@@ -121,54 +150,69 @@
     <div class="prato">
         <p>Por fim, sua sobremesa</p>
     </div>
-    <div class="caixa">
-        <div class="pedido-sobremesa ">
-            <img src="imagens/pudim 2.png"/>
-            <div class="pedido-texto">
+    <div class="caixa-sobremesa">
+        <div onclick="SelecionarSobremesa(this)" class="pedido-sobremesa ">
+            <img class="produto" src="imagens/pudim 2.png"/>
+            <div class="pedido-texto-sobremesa">
                 <h3>Pudim</h3>
                 <h4>Fatia de 150g</h4>
-                <p>R$ 6,90</p>
+                <p>R$ <span class="valor">6,90</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 2----->
-        <div class="pedido-sobremesa">
-            <img src="imagens/brigadeiro.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarSobremesa(this)" class="pedido-sobremesa">
+            <img class="produto" src="imagens/brigadeiro.png"/>
+            <div class="pedido-texto-sobremesa">
                 <h3>Brigadeiro</h3>
                 <h4>Unidade de 50g</h4>
-                <p>R$ 3,50</p>
+                <p>R$ <span class="valor">3,50</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 3----->
-        <div class="pedido-sobremesa">
-            <img src="imagens/torta.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarSobremesa(this)" class="pedido-sobremesa">
+            <img class="produto" src="imagens/torta.png"/>
+            <div class="pedido-texto-sobremesa">
                 <h3>Torta de Limão</h3>
                 <h4>Fatia de 200g</h4>
-                <p>R$ 7,90</p>
+                <p>R$ <span class="valor">7,90</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 4----->
-        <div class="pedido-sobremesa">
-            <img src="imagens/cheesecake.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarSobremesa(this)" class="pedido-sobremesa">
+            <img class="produto" src="imagens/cheesecake.png"/>
+            <div class="pedido-texto-sobremesa">
                 <h3>Cheesecake</h3>
                 <h4>Fatia de 200g</h4>
-                <p>R$ 8,50</p>
+                <p>R$ <span class="valor">8,50</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
         <!----pedido 5----->
-        <div class="pedido-sobremesa">
-            <img src="imagens/brownie.png"/>
-            <div class="pedido-texto">
+        <div onclick="SelecionarSobremesa(this)" class="pedido-sobremesa">
+            <img class="produto" src="imagens/brownie.png"/>
+            <div class="pedido-texto-sobremesa">
                 <h3>Brownie</h3>
                 <h4>Unidade de 90g</h4>
-                <p>R$ 6,50</p>
+                <p>R$ <span class="valor">6,50</span></p>
+                <div class="botão">
+                    <img src="imagens/checkmark-circle 1.png"/>
+                </div>
             </div>
         </div>
     </div>
    <div class="botao-inferior">
-    <div class="botao">
+    <div onclick="Pedido(); Whatsapp()" class="seletor">
         <p>Selecione os 3 itens</p>
         <p>para fechar o pedido</p>
     </div>

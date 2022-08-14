@@ -24,6 +24,7 @@ body {
     top: 0;
     left: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
 }
 
 .texto-topo {
@@ -54,7 +55,9 @@ h2 {
     font-size: 26px;
 }
 
-.caixa {
+.caixa-prato,
+.caixa-bebida,
+.caixa-sobremesa {
     display: flex;
     overflow-x: scroll;
 
@@ -87,7 +90,7 @@ h2 {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-img {
+.produto {
     width: 144px;
     height: 87px;
     margin-top: 18px;
@@ -137,7 +140,8 @@ h4 {
     left: 0;
 }
 
-.botao {
+.seletor {
+font-family: 'Roboto', sans-serif;
 width: 364px;
 height:61px;
 border-radius: 50px;
@@ -146,32 +150,35 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-}
-
-.botao p {
-font-family: 'Roboto', sans-serif;
-color: #FFFFFF;
 font-size: 20px;
 font-weight: 400;
+color: #FFFFFF;
 }
 
-.pedido-texto {
-position: relative;
+.mudarFundo {
+    background-color:  #32B72F;
+}
+
+.pedido-texto-prato,
+.pedido-texto-bebida,
+.pedido-texto-sobremesa {
+ position: relative;
 }
 
 .botão {
 width: 19px;
 height: 19px;
-position: absolute;
-right: 0;
-top: 45px;
 opacity: 0;
-}
-
-.botãoAparece {
-opacity: 1;
+position: absolute;
+right: 15px;
+bottom: 0;
 }
 
 .selecionado {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+/* na classe selecionado o botão terá opacity 1 e não 0 como antes */
+.selecionado .botão {
+    opacity: 1;
 }
